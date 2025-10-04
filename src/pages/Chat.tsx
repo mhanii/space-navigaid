@@ -61,7 +61,7 @@ const Chat = () => {
                 <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-[0_4px_12px_rgba(251,146,60,0.5)]">
                   AI Research Assistant
                 </h1>
-                <p className="text-xl text-foreground/80 max-w-2xl">
+                <p className="text-base font-semibold text-foreground/80 max-w-2xl">
                   Explora 608 artículos científicos de NASA sobre biociencia espacial
                 </p>
               </div>
