@@ -23,8 +23,8 @@ const App = () => (
         <div className="min-h-screen w-full bg-background">
           <Navigation />
           <Routes>
-            <Route path="/" element={<Chat />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/chat" element={<Chat />} />
             <Route path="/documents" element={<DocumentsList />} />
             <Route path="/documents/:id" element={<Documents />} />
             <Route path="/search" element={<SearchPage />} />
