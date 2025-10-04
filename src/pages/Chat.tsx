@@ -67,17 +67,17 @@ const Chat = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl pb-8">
-                <div className="bg-white/10 backdrop-blur-lg border-2 border-white rounded-lg p-4 hover:backdrop-blur-xl transition-all text-center">
+                <div className="bg-white/40 backdrop-blur-lg border-2 border-white/50 rounded-lg p-4 hover:bg-white/50 transition-all text-center">
                   <p className="text-sm font-bold text-foreground/90">
                     "¿Cómo afecta la <span className="underline">microgravedad</span> a la <span className="underline">densidad ósea</span>?"
                   </p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-lg border-2 border-white rounded-lg p-4 hover:backdrop-blur-xl transition-all text-center">
+                <div className="bg-white/40 backdrop-blur-lg border-2 border-white/50 rounded-lg p-4 hover:bg-white/50 transition-all text-center">
                   <p className="text-sm font-bold text-foreground/90">
                     "Estudios sobre <span className="underline">organismos modelo</span> en el espacio"
                   </p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-lg border-2 border-white rounded-lg p-4 hover:backdrop-blur-xl transition-all text-center">
+                <div className="bg-white/40 backdrop-blur-lg border-2 border-white/50 rounded-lg p-4 hover:bg-white/50 transition-all text-center">
                   <p className="text-sm font-bold text-foreground/90">
                     "Efectos del <span className="underline">vuelo espacial</span> en la <span className="underline">biología celular</span>"
                   </p>
