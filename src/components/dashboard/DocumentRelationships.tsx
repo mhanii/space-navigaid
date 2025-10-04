@@ -13,9 +13,11 @@ interface DocumentRelationshipsProps {
 
 const relationConfig = {
   contradiction: {
-    color: 'text-destructive',
-    bg: 'bg-destructive/10',
-    borderColor: 'border-destructive/30',
+    color: 'text-[#FF5031]',
+    bg: 'bg-[#FF5031]/10',
+    borderColor: 'border-[#FF5031]/30',
+    containerBg: 'bg-[#FF5031]/5',
+    containerBorder: 'border-[#FF5031]/20',
     icon: GitCompareArrows,
     label: 'Contradiction',
   },
@@ -43,9 +45,10 @@ export const DocumentRelationships = ({ relations }: DocumentRelationshipsProps)
   });
 
   const hasContradictions = relations.some(r => r.type === 'contradiction');
+  const contradictionConfig = relationConfig.contradiction;
 
   return (
-    <div className={`border rounded-lg p-6 ${hasContradictions ? 'bg-destructive/5 border-destructive/20' : 'bg-card border-border'}`}>
+    <div className={`border rounded-lg p-6 ${hasContradictions ? `${contradictionConfig.containerBg} ${contradictionConfig.containerBorder}` : 'bg-card border-border'}`}>
       <h3 className="text-lg font-semibold mb-4">Document Relationships</h3>
       <div className="space-y-3">
         {sortedRelations.map((relation, index) => {
