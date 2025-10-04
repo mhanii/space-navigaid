@@ -31,7 +31,7 @@ export const Navigation = () => {
                 }
               >
                 <item.icon className="w-4 h-4" />
-                <span className="text-sm font-medium hidden md:inline">{item.label}</span>
+                <span className="md:text-sm text-xs font-medium inline">{item.label}</span>
               </NavLink>
             ))}
           </div>
@@ -61,7 +61,7 @@ export const Navigation = () => {
                   }
                 >
                   <item.icon className="w-4 h-4" />
-                  <span className="text-sm font-medium hidden md:inline">{item.label}</span>
+                  <span className="md:text-sm text-xs font-medium inline">{item.label}</span>
                 </NavLink>
               ))}
             </div>
