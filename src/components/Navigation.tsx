@@ -3,7 +3,7 @@ import { MessageSquare, FileText, Search, Network } from 'lucide-react';
 
 const leftNavItems = [
   { path: '/documents', label: 'Documents', icon: FileText },
-  { path: '/', label: 'AI Chat', icon: MessageSquare },
+  { path: '/chat', label: 'AI Chat', icon: MessageSquare },
 ];
 
 const rightNavItems = [
