@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 
@@ -41,7 +41,7 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
           disabled={!input.trim() || disabled}
           className="h-[48px] w-[48px] rounded-full p-0 shrink-0"
         >
-          <Send className="w-4 h-4" />
+          <ArrowUp className="w-5 h-5" strokeWidth={2.5} />
         </Button>
       </div>
     </div>
