@@ -38,7 +38,7 @@ export const Navigation = () => {
 
           {/* Center Section: NASA Bio Explorer */}
           <NavLink
-            to="/dashboard"
+            to="/"
             className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
             NASA Bio Explorer
