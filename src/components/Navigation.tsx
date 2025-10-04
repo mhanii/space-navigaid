@@ -23,7 +23,7 @@ export const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `flex items-center space-x-2 px-3 py-0.5 rounded-full transition-colors ${
+                  `flex items-center space-x-2 px-3 py-1 rounded-full transition-colors ${
                     isActive
                       ? 'bg-primary text-[#fff]'
                       : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
@@ -52,7 +52,7 @@ export const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   className={({ isActive }) =>
-                    `flex items-center space-x-2 px-3 py-0.5 rounded-full transition-colors ${
+                    `flex items-center space-x-2 px-3 py-1 rounded-full transition-colors ${
                       isActive
                         ? 'bg-primary text-[#fff]'
                         : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
