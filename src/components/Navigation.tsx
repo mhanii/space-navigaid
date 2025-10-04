@@ -3,7 +3,7 @@ import { MessageSquare, FileText, Search, Network } from 'lucide-react';
 
 const leftNavItems = [
   { path: '/documents', label: 'Documents', icon: FileText },
-  { path: '/chat', label: 'AI Chat', icon: MessageSquare },
+  { path: '/', label: 'AI Chat', icon: MessageSquare },
 ];
 
 const rightNavItems = [
@@ -38,7 +38,7 @@ export const Navigation = () => {
 
           {/* Center Section: NASA Bio Explorer */}
           <NavLink
-            to="/"
+            to="/dashboard"
             className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
             NASA Bio Explorer
