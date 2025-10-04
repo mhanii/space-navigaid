@@ -58,7 +58,7 @@ const Chat = () => {
                 <Sparkles className="w-10 h-10 text-primary" />
               </div>
               <div className="space-y-3">
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
                   AI Research Assistant
                 </h1>
                 <p className="text-xl text-foreground/80 max-w-2xl">
