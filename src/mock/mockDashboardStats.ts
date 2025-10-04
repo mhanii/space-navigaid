@@ -54,6 +54,44 @@ export const mockDashboardStats: CorpusStats = {
       priority: 'medium',
     },
   ],
+  documentRelations: [
+    {
+      type: 'contradiction',
+      title: 'Muscle protein synthesis rates',
+      description: 'Study A reports 40% decrease in protein synthesis during microgravity, while Study B shows only 15% reduction using different methodology.',
+      documents: ['DOC-234', 'DOC-567'],
+    },
+    {
+      type: 'complementation',
+      title: 'Bone density mechanisms',
+      description: 'Research combining osteoblast activity data with mineral absorption studies provides complete picture of bone loss in space.',
+      documents: ['DOC-112', 'DOC-445', 'DOC-789'],
+    },
+    {
+      type: 'analogy',
+      title: 'Plant tropism parallels',
+      description: 'Gravitropic response in Arabidopsis shows similar mechanotransduction pathways as found in C. elegans muscle development.',
+      documents: ['DOC-334', 'DOC-821'],
+    },
+    {
+      type: 'contradiction',
+      title: 'Radiation shielding effectiveness',
+      description: 'Conflicting results on water-based shielding effectiveness between ground simulation and actual ISS measurements.',
+      documents: ['DOC-156', 'DOC-892'],
+    },
+    {
+      type: 'complementation',
+      title: 'Circadian rhythm disruption',
+      description: 'Gene expression profiles complement behavioral studies to explain sleep disturbances in astronauts.',
+      documents: ['DOC-223', 'DOC-556', 'DOC-667'],
+    },
+    {
+      type: 'analogy',
+      title: 'Cellular stress responses',
+      description: 'Heat shock protein upregulation patterns in space match those observed in deep-sea organisms under pressure.',
+      documents: ['DOC-445', 'DOC-778'],
+    },
+  ],
   publicationsByYear: [
     { year: 2000, count: 8 },
     { year: 2001, count: 12 },

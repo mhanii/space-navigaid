@@ -67,6 +67,12 @@ export interface CorpusStats {
     description: string;
     priority: 'high' | 'medium' | 'low';
   }>;
+  documentRelations: Array<{
+    type: 'contradiction' | 'complementation' | 'analogy';
+    title: string;
+    description: string;
+    documents: string[];
+  }>;
   publicationsByYear: Array<{ year: number; count: number }>;
 }
 

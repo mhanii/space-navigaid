@@ -4,6 +4,7 @@ import { PublicationTimeline } from '@/components/dashboard/PublicationTimeline'
 import { TopicDistribution } from '@/components/dashboard/TopicDistribution';
 import { OrganismPieChart } from '@/components/dashboard/OrganismPieChart';
 import { ResearchGaps } from '@/components/dashboard/ResearchGaps';
+import { DocumentRelationships } from '@/components/dashboard/DocumentRelationships';
 import { mockDashboardStats } from '@/mock/mockDashboardStats';
 import { Footer } from '@/components/Footer';
 
@@ -49,8 +50,9 @@ const Dashboard = () => {
           />
         </div>
 
-        <div className="mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <ResearchGaps gaps={stats.knowledgeGaps} />
+          <DocumentRelationships relations={stats.documentRelations} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
