@@ -33,7 +33,7 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Ask about microgravity effects, bone density studies, model organisms..."
-          className="min-h-[48px] max-h-[48px] resize-none rounded-full py-3"
+          className="min-h-[48px] max-h-[48px] text-sm resize-none rounded-full py-3"
           disabled={disabled}
         />
         <Button
