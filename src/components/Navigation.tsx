@@ -25,7 +25,7 @@ export const Navigation = () => {
                 className={({ isActive }) =>
                   `flex items-center space-x-2 px-4 py-2 rounded-md transition-colors ${
                     isActive
-                      ? 'bg-primary text-[#3E79FF]'
+                      ? 'bg-primary text-[#fff]'
                       : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
                   }`
                 }
@@ -54,7 +54,7 @@ export const Navigation = () => {
                   className={({ isActive }) =>
                     `flex items-center space-x-2 px-4 py-2 rounded-md transition-colors ${
                       isActive
-                        ? 'bg-primary text-[#3E79FF]'
+                        ? 'bg-primary text-[#fff]'
                         : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
                     }`
                   }
