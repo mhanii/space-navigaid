@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { MessageSquare, FileText, Search, Network } from 'lucide-react';
 
 const leftNavItems = [
-  { path: '/documents', label: 'Documents', icon: FileText },
+  { path: '/documents', label: 'Docs', icon: FileText },
   { path: '/chat', label: 'AI Chat', icon: MessageSquare },
 ];
 
