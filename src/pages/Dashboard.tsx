@@ -5,6 +5,7 @@ import { TopicDistribution } from '@/components/dashboard/TopicDistribution';
 import { OrganismPieChart } from '@/components/dashboard/OrganismPieChart';
 import { ResearchGaps } from '@/components/dashboard/ResearchGaps';
 import { mockDashboardStats } from '@/mock/mockDashboardStats';
+import { Footer } from '@/components/Footer';
 
 const Dashboard = () => {
   const stats = mockDashboardStats;
@@ -61,6 +62,7 @@ const Dashboard = () => {
           <OrganismPieChart data={stats.organisms} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

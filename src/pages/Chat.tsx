@@ -4,6 +4,7 @@ import { ChatInput } from '@/components/chat/ChatInput';
 import { generateMockResponse } from '@/mock/mockChatData';
 import { ChatMessage as ChatMessageType } from '@/types';
 import { Sparkles } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 const Chat = () => {
   const [messages, setMessages] = useState<ChatMessageType[]>([]);
@@ -111,6 +112,8 @@ const Chat = () => {
           <ChatInput onSend={handleSend} disabled={isLoading} />
         </div>
       )}
+
+      {messages.length === 0 && <Footer />}
     </div>
   );
 };

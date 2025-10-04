@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SearchBar } from '@/components/search/SearchBar';
 import { DocumentCard } from '@/components/search/DocumentCard';
 import { mockDocuments } from '@/mock/mockDocuments';
+import { Footer } from '@/components/Footer';
 
 const SearchPage = () => {
   const [query, setQuery] = useState('');
@@ -48,6 +49,7 @@ const SearchPage = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

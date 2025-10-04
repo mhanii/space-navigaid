@@ -1,5 +1,6 @@
 import { mockDocuments } from '@/mock/mockDocuments';
 import { DocumentCard } from '@/components/search/DocumentCard';
+import { Footer } from '@/components/Footer';
 
 const DocumentsList = () => {
   return (
@@ -21,6 +22,7 @@ const DocumentsList = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
