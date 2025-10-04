@@ -27,19 +27,19 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
 
   return (
     <div className="p-4">
-      <div className="flex space-x-2">
+      <div className="flex items-center space-x-2">
         <Textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Ask about microgravity effects, bone density studies, model organisms..."
-          className="min-h-[60px] resize-none"
+          className="min-h-[48px] max-h-[48px] resize-none rounded-full py-3"
           disabled={disabled}
         />
         <Button
           onClick={handleSend}
           disabled={!input.trim() || disabled}
-          className="self-end"
+          className="h-[48px] w-[48px] rounded-full p-0 shrink-0"
         >
           <Send className="w-4 h-4" />
         </Button>
