@@ -4,7 +4,6 @@ import { ChatInput } from '@/components/chat/ChatInput';
 import { generateMockResponse } from '@/mock/mockChatData';
 import { ChatMessage as ChatMessageType } from '@/types';
 import { Sparkles } from 'lucide-react';
-import backgroundImage from '@/assets/mesh-gradient.png';
 
 const Chat = () => {
   const [messages, setMessages] = useState<ChatMessageType[]>([]);
@@ -41,14 +40,9 @@ const Chat = () => {
     <div 
       className="h-screen flex flex-col relative"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundImage: 'linear-gradient(to bottom, #ffffff, #fafbff, #f2f9ff, #e8f7ff, #dcf5ff, #d3f3fe, #c9f1fc, #bfeffa, #b6ebf6, #ade7f2, #a4e3ed, #9bdfe9)',
       }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/30 backdrop-blur-sm" />
 
       <div className="relative z-10 flex-1 overflow-y-auto px-4 py-6">
         <div className="container mx-auto max-w-4xl h-full flex flex-col">
