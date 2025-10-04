@@ -48,6 +48,10 @@ const Dashboard = () => {
           />
         </div>
 
+        <div className="mb-8">
+          <ResearchGaps gaps={stats.knowledgeGaps} />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <PublicationTimeline data={stats.publicationsByYear} />
           <TopicDistribution data={stats.topTopics} />
@@ -55,7 +59,6 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <OrganismPieChart data={stats.organisms} />
-          <ResearchGaps gaps={stats.knowledgeGaps} />
         </div>
       </div>
     </div>
