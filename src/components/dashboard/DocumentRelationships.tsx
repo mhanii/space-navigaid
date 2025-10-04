@@ -42,8 +42,10 @@ export const DocumentRelationships = ({ relations }: DocumentRelationshipsProps)
     return priority[a.type] - priority[b.type];
   });
 
+  const hasContradictions = relations.some(r => r.type === 'contradiction');
+
   return (
-    <div className="bg-card border border-border rounded-lg p-6">
+    <div className={`border rounded-lg p-6 ${hasContradictions ? 'bg-destructive/5 border-destructive/20' : 'bg-card border-border'}`}>
       <h3 className="text-lg font-semibold mb-4">Document Relationships</h3>
       <div className="space-y-3">
         {sortedRelations.map((relation, index) => {
