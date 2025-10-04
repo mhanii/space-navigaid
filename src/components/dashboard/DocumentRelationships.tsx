@@ -48,7 +48,7 @@ export const DocumentRelationships = ({ relations }: DocumentRelationshipsProps)
   const contradictionConfig = relationConfig.contradiction;
 
   return (
-    <div className={`border rounded-lg p-6 ${hasContradictions ? `${contradictionConfig.containerBg} ${contradictionConfig.containerBorder}` : 'bg-[#fff] border-border'}`}>
+    <div className={`border rounded-lg p-6 ${hasContradictions ? `bg-[#fff] ${contradictionConfig.containerBorder}` : 'bg-[#fff] border-border'}`}>
       <h3 className="text-lg font-semibold mb-4">Document Relationships</h3>
       <div className="space-y-3">
         {sortedRelations.map((relation, index) => {
