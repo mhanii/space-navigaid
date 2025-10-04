@@ -505,7 +505,7 @@ function Sidebar({
   }, [activeIndex, data.edges])
 
   return (
-    <aside className="fixed right-0 top-0 h-screen w-[340px] z-50 bg-neutral-950/85 backdrop-blur border-l border-neutral-800 text-neutral-200 p-4 overflow-y-auto select-none">
+    <aside className="fixed right-0 top-16 bottom-0 w-[340px] z-50 bg-neutral-950/85 backdrop-blur border-l border-neutral-800 text-neutral-200 p-4 overflow-y-auto select-none">
       <div className="mb-3">
         <div className="text-lg font-semibold">Panel de documentos</div>
         <div className="text-xs text-neutral-400">Interacciones · Estadísticas · Parámetros · Controles</div>
@@ -562,7 +562,7 @@ function Sidebar({
         </div>
       </section>
 
-      {/* PARÁMETROS */}
+      {/* PARÁMETROS (ficticios) */}
       <section className="mb-4">
         <h3 className="text-sm font-semibold mb-2">Parámetros</h3>
         <ul className="text-xs text-neutral-300 space-y-1">
@@ -602,7 +602,7 @@ function Sidebar({
         )}
       </section>
 
-      {/* ACCIONES */}
+      {/* ACCIONES (ficticias) */}
       <section className="mb-10">
         <h3 className="text-sm font-semibold mb-2">Acciones</h3>
         <div className="grid grid-cols-2 gap-2">
@@ -631,7 +631,7 @@ export default function GraphView() {
   const [showLattice, setShowLattice] = useState(false)
 
   return (
-    <div className="h-screen w-screen overflow-hidden font-sans relative">
+    <div className="fixed inset-0 top-16 overflow-hidden font-sans">
       <Sidebar
         data={data}
         hovered={hovered}
