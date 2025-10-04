@@ -26,7 +26,7 @@ export const Navigation = () => {
                   `flex items-center space-x-2 px-4 py-2 rounded-md transition-colors ${
                     isActive
                       ? 'bg-primary text-[#3E79FF]'
-                      : 'text-muted-foreground hover:bg-[#93B4FF] hover:text-[#020919]'
+                      : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
                   }`
                 }
               >
@@ -55,7 +55,7 @@ export const Navigation = () => {
                     `flex items-center space-x-2 px-4 py-2 rounded-md transition-colors ${
                       isActive
                         ? 'bg-primary text-[#3E79FF]'
-                        : 'text-muted-foreground hover:bg-[#93B4FF] hover:text-[#020919]'
+                        : 'text-muted-foreground hover:bg-[#BDD1FF] hover:text-[#020919]'
                     }`
                   }
                 >
