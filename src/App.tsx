@@ -7,6 +7,7 @@ import { Navigation } from "./components/Navigation";
 import Dashboard from "./pages/Dashboard";
 import Chat from "./pages/Chat";
 import Documents from "./pages/Documents";
+import DocumentsList from "./pages/DocumentsList";
 import SearchPage from "./pages/SearchPage";
 import GraphView from "./pages/GraphView";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/documents" element={<DocumentsList />} />
             <Route path="/documents/:id" element={<Documents />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/graph" element={<GraphView />} />
