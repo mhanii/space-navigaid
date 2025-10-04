@@ -48,7 +48,7 @@ const Chat = () => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/40 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/30 backdrop-blur-sm" />
 
       <div className="relative z-10 flex-1 overflow-y-auto px-4 py-6">
         <div className="container mx-auto max-w-4xl h-full flex flex-col">
