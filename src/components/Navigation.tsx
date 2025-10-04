@@ -42,7 +42,7 @@ export const Navigation = () => {
             className="text-xs md:text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
             <span className="hidden md:inline">NASA Bio Explorer</span>
-            <span className="md:hidden">NASA Bio</span>
+            <span className="md:hidden text-medium">NASA Bio</span>
           </NavLink>
 
           {/* Right Section: Search, Graph, Info */}
@@ -61,7 +61,7 @@ export const Navigation = () => {
                   }
                 >
                   <item.icon className="w-4 h-4" />
-                  <span className="md:text-sm text-xs font-medium inline">{item.label}</span>
+                  <span className="text-sm font-medium hidden md:inline">{item.label}</span>
                 </NavLink>
               ))}
             </div>
