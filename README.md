@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [AletheIA Website](https:/alethe-ia.vercel.app)
+**URL**: [AletheIA Website](https://alethe-ia.vercel.app)
 
 ## How can I edit this code?
 
