@@ -18,29 +18,14 @@ const SearchPage = () => {
       doc.topics.some((topic) => topic.toLowerCase().includes(query.toLowerCase()))
   );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className="min-h-screen bg-background">
-@@ -26,28 +48,46 @@ const SearchPage = () => {
+      <div className="container mx-auto px-4 py-8">
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold mb-2">Search Research Papers</h1>
+          <p className="text-muted-foreground">
+            Search through NASA's research database
+          </p>
         </div>
 
         <div className="mb-8">
@@ -59,31 +44,17 @@ const SearchPage = () => {
           ))}
         </div>
 
-
-
         {filteredDocuments.length === 0 && query && (
-
-
-
-
-
-
-
-
           <div className="text-center py-12">
             <p className="text-muted-foreground">
               No papers found matching "{query}"
             </p>
           </div>
         )}
-
-
-
-
-
-
-
-
       </div>
       <Footer />
     </div>
+  );
+};
+
+export default SearchPage;
