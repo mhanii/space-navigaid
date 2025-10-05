@@ -5,6 +5,7 @@
 **URL**: [AletheIA Website](https://alethe-ia.vercel.app)
 
 **TEAM**
+
 https://www.linkedin.com/in/juan-manuel-g%C3%B3mez-vargas-85a26b329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 https://www.linkedin.com/in/diana-abedin
 http://linkedin.com/in/sergio-pérez-montalvo-599141236
