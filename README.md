@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Welcome to AletheAI
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/fb61e7f0-6ecf-4685-908c-f92f015b9d54
+**URL**: https:/alethe-ia.vercel.app
 
 ## How can I edit this code?
 
