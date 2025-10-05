@@ -1,4 +1,17 @@
 // Core document types
+export interface DocumentMetadata {
+  id: string;
+  title: string;
+  authors: string[];
+  year: number;
+  // We use 'abstract' here in the type to match the DocumentCard's expected prop name, 
+  // but it holds the 'summary' from the backend.
+  abstract: string; 
+  topics: string[];
+  organisms: string[];
+  missions: string[];
+}
+
 export interface Document {
   id: string;
   title: string;

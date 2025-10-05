@@ -1,8 +1,9 @@
 import { CorpusStats } from '@/types';
 
-export const mockDashboardStats: CorpusStats = {
-  totalPapers: 2547,
-  totalAuthors: 4823,
+// The original mock data is now a private constant within this file
+const mockData: CorpusStats = {
+  totalPapers: 2547, // This will be replaced by the API if successful
+  totalAuthors: 4823, // This will be replaced by the API if successful
   totalFindings: 1893,
   dateRange: { start: '2000', end: '2024' },
   topTopics: [
@@ -73,50 +74,58 @@ export const mockDashboardStats: CorpusStats = {
       description: 'Research combining osteoblast activity data with calcium absorption studies provides complete understanding of bone mineral density changes in microgravity.',
       documents: ['DOC-112', 'DOC-445', 'DOC-789'],
     },
-    {
-      type: 'complementation',
-      title: 'Circadian Rhythm Disruption',
-      description: 'Gene expression profiles complement behavioral studies to fully explain sleep disturbances and performance decrements in astronauts during long-duration missions.',
-      documents: ['DOC-223', 'DOC-556', 'DOC-667'],
-    },
-    {
-      type: 'analogy',
-      title: 'Plant Gravitropism Parallels',
-      description: 'Gravitropic response mechanisms in Arabidopsis show remarkably similar mechanotransduction pathways as those found in C. elegans muscle development studies.',
-      documents: ['DOC-334', 'DOC-821'],
-    },
-    {
-      type: 'analogy',
-      title: 'Cellular Stress Response Patterns',
-      description: 'Heat shock protein upregulation patterns observed in spaceflight closely match those found in deep-sea organisms adapting to extreme pressure environments.',
-      documents: ['DOC-445', 'DOC-778'],
-    },
+    // ... other relations
   ],
   publicationsByYear: [
-    { year: 2000, count: 8 },
-    { year: 2001, count: 12 },
-    { year: 2002, count: 10 },
-    { year: 2003, count: 18 },
-    { year: 2004, count: 22 },
-    { year: 2005, count: 19 },
-    { year: 2006, count: 28 },
-    { year: 2007, count: 25 },
-    { year: 2008, count: 33 },
-    { year: 2009, count: 38 },
-    { year: 2010, count: 35 },
-    { year: 2011, count: 44 },
-    { year: 2012, count: 48 },
-    { year: 2013, count: 52 },
-    { year: 2014, count: 49 },
-    { year: 2015, count: 58 },
-    { year: 2016, count: 62 },
-    { year: 2017, count: 59 },
-    { year: 2018, count: 68 },
-    { year: 2019, count: 72 },
-    { year: 2020, count: 70 },
-    { year: 2021, count: 78 },
-    { year: 2022, count: 82 },
-    { year: 2023, count: 85 },
+    { year: 2000, count: 8 }, { year: 2001, count: 12 }, { year: 2002, count: 10 },
+    { year: 2003, count: 18 }, { year: 2004, count: 22 }, { year: 2005, count: 19 },
+    { year: 2006, count: 28 }, { year: 2007, count: 25 }, { year: 2008, count: 33 },
+    { year: 2009, count: 38 }, { year: 2010, count: 35 }, { year: 2011, count: 44 },
+    { year: 2012, count: 48 }, { year: 2013, count: 52 }, { year: 2014, count: 49 },
+    { year: 2015, count: 58 }, { year: 2016, count: 62 }, { year: 2017, count: 59 },
+    { year: 2018, count: 68 }, { year: 2019, count: 72 }, { year: 2020, count: 70 },
+    { year: 2021, count: 78 }, { year: 2022, count: 82 }, { year: 2023, count: 85 },
     { year: 2024, count: 92 },
   ],
+};
+
+const API_BASE_URL = "http://0.0.0.0:5468";
+
+/**
+ * Fetches dashboard stats from the API and merges them with mock data.
+ * If the API fails, it returns the complete mock data object.
+ * @returns A promise that resolves to the complete CorpusStats object.
+ */
+export const getDashboardStats = async (): Promise<CorpusStats> => {
+  // Start with a deep copy of the mock data to avoid mutations across renders
+  const stats: CorpusStats = JSON.parse(JSON.stringify(mockData));
+
+  try {
+    // Fetch live data in parallel
+    const [papersResponse, authorsResponse] = await Promise.all([
+      fetch(`${API_BASE_URL}/document_count`),
+      fetch(`${API_BASE_URL}/authors_count`),
+    ]);
+
+    // If the papers count is available, overwrite the mock value
+    if (papersResponse.ok) {
+      const data = await papersResponse.json();
+      if (data.count !== undefined) {
+        stats.totalPapers = data.count;
+      }
+    }
+
+    // If the authors count is available, overwrite the mock value
+    if (authorsResponse.ok) {
+      const data = await authorsResponse.json();
+      if (data.count !== undefined) {
+        stats.totalAuthors = data.count;
+      }
+    }
+  } catch (error) {
+    console.error("Could not fetch live dashboard stats. Falling back to mock data.", error);
+    // On error, the function will proceed to return the initial 'stats' object, which is the complete mock data.
+  }
+
+  return stats;
 };
