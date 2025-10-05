@@ -1,8 +1,8 @@
 import { CorpusStats } from '@/types';
 
 export const mockDashboardStats: CorpusStats = {
-  totalPapers: 608,
-  totalAuthors: 1247,
+  totalPapers: 2547,
+  totalAuthors: 4823,
   totalFindings: 1893,
   dateRange: { start: '2000', end: '2024' },
   topTopics: [
