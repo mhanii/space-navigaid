@@ -4,6 +4,13 @@
 
 **URL**: [AletheIA Website](https://alethe-ia.vercel.app)
 
+**TEAM**
+https://www.linkedin.com/in/juan-manuel-g%C3%B3mez-vargas-85a26b329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+https://www.linkedin.com/in/diana-abedin
+http://linkedin.com/in/sergio-pérez-montalvo-599141236
+https://www.linkedin.com/in/mar%C3%ADa-fern%C3%A1ndez-p%C3%A9rez-b815581b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+https://www.linkedin.com/in/mohamed-hani-912091257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
