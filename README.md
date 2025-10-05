@@ -1,18 +1,16 @@
-# Welcome to your Lovable project
+# Welcome to AletheAI
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/fb61e7f0-6ecf-4685-908c-f92f015b9d54
+**URL**: [AletheIA Website](https://alethe-ia.vercel.app)
 
-## How can I edit this code?
+**TEAM**
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/fb61e7f0-6ecf-4685-908c-f92f015b9d54) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+https://www.linkedin.com/in/juan-manuel-g%C3%B3mez-vargas-85a26b329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+https://www.linkedin.com/in/diana-abedin
+http://linkedin.com/in/sergio-pérez-montalvo-599141236
+https://www.linkedin.com/in/mar%C3%ADa-fern%C3%A1ndez-p%C3%A9rez-b815581b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+https://www.linkedin.com/in/mohamed-hani-912091257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 **Use your preferred IDE**
 
@@ -60,14 +58,3 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fb61e7f0-6ecf-4685-908c-f92f015b9d54) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
