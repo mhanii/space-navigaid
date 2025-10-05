@@ -7,31 +7,9 @@ import { ResearchGaps } from '@/components/dashboard/ResearchGaps';
 import { DocumentRelationships } from '@/components/dashboard/DocumentRelationships';
 import { mockDashboardStats } from '@/mock/mockDashboardStats';
 import { Footer } from '@/components/Footer';
-import { useEffect, useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
 
 const Dashboard = () => {
   const stats = mockDashboardStats;
-  const [documentCount, setDocumentCount] = useState(0);
-  const [authorCount, setAuthorCount] = useState(0);
-
-  useEffect(() => {
-    const fetchCounts = async () => {
-      try {
-        const { data: docData } = await supabase.functions.invoke('document_count');
-        const { data: authData } = await supabase.functions.invoke('authors_count');
-        
-        setDocumentCount(docData?.count ?? stats.totalPapers);
-        setAuthorCount(authData?.count ?? stats.totalAuthors);
-      } catch (error) {
-        console.error('Error fetching counts:', error);
-        setDocumentCount(stats.totalPapers);
-        setAuthorCount(stats.totalAuthors);
-      }
-    };
-
-    fetchCounts();
-  }, [stats.totalPapers, stats.totalAuthors]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -46,14 +24,14 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 text-[#3E79FF]">
           <StatCard
             title="Total Papers"
-            value={documentCount.toLocaleString()}
+            value="0"
             icon={FileText}
             subtitle={`${stats.dateRange.start} - ${stats.dateRange.end}`}
             trend={{ value: 12.5, isPositive: true }}
           />
           <StatCard
             title="Unique Authors"
-            value={authorCount.toLocaleString()}
+            value={stats.totalAuthors.toLocaleString()}
             icon={Users}
             subtitle="Contributing researchers"
             trend={{ value: 8.3, isPositive: true }}
