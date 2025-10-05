@@ -24,7 +24,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 text-[#3E79FF]">
           <StatCard
             title="Total Papers"
-            value="0"
+            value="608"
             icon={FileText}
             subtitle={`${stats.dateRange.start} - ${stats.dateRange.end}`}
             trend={{ value: 12.5, isPositive: true }}
